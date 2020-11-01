@@ -263,13 +263,50 @@
     <div>
         <p> Fucking hell. Now we have to insert date. As if I couldn't get it from the browser. Or a google account.</p>
         <p><del>WTF am I doing?</del></p>
-        <form action="index.html" method="post">
+        <form action="index.html" method="post" id="departure">
             <label for="departure">Departure date:</label>
             <input type="date" name="departure" />
             <input type="submit" value="send">
 
         </form>
     </div>
+    <hr />
+    <div>
+        <p> Date and data validation is complete. Now let's proceed to the email, url insertion.</p>
+        <form action="index.html" method="post">
+            <p> Please insert your email:</p>
+            <input type="email" name="email">
+            <input type="submit" value="Send">
+        </form>
+        <hr />
+        <form action="index.html" method="post">
+            <p> Please insert an URL:</p>
+            <input type="url" name="url">
+            <input type="submit" value="Send">
+        </form>
+        <hr />
+        <form action="index.html" method="post">
+            <p> Please insert a search request:</p>
+            <input type="search" name="search">
+            <input type="submit" value="Search">
+        </form>
+        <form action="index.html" method="post">
+            <p> Please insert another search request: </p>
+            <input type="search" name="search" placeholder="Find me!">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <hr />
+    <div>
+        <p> This is an iframe implementation. The iframe is used in order to make a window with some info.</p><br />
+        <p> To be honest, I have no idea how does it work.</p>
+        <iframe width="300px" height="100px" src="index.html" seamless></iframe>
+        <p> Ok, I lied. Now I know why do I need to use these. It's used to insert an html page into another html page.</p>
+        <p> Seamless is a ridiculous thing. It literally does nothing.</p>
+        
 
+
+
+    </div>
 </body>
 </html>
